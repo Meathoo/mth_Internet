@@ -6,40 +6,35 @@
         <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     </head>
     <body class='bg-gray-100'>
-        <div class="container">
-            <div class="flex flex-row shadow-lg h-16  fixed top-0 left-0 right-0 bg-white text-center">
-                <div class="basis-32"></div>
-                <div class="basis-1/12 mr-7"><a href="index.html"><img src="logo.png" class="bg-contain bg-no-repeat"></a></div>
-                <div class="basis-1/12 pt-5 hover:bg-gray-200"><a href="about.html">關於我們</a></div>
-                <div class="basis-1/12 pt-5 hover:bg-gray-200"><a href="faq.html">常見問題</a></div>
-                <div class="basis-1/12 pt-5 hover:bg-gray-200"><a href="member.html">會員專區</a></div>
-                <div class="basis-3/12"></div>
-                <div class="basis-1/12 pt-5 hover:bg-gray-200"><a href="#">會員登入</a></div>
-                <div class="basis-1/12 pt-5 hover:bg-gray-200"><a href="#">中文/DarkMode</a></div>
-            </div>
-            
-            <div class="mt-16 bg-gray-100">
-               常見問題
-            </div>
-            <div class="flex flex-row h-28 bg-gray-200">
-                <div class="basis-1/4"><img class="pl-44 mt-7 h-20 bg-no-repeat" src="logo_blue.png"></div>
-                <div class="basis-2/4"></div>
-                <div class="basis-1/5">
-                    <div class="mt-12 flex space-x-4 ml-28">
-                        <a href="#"><img class="h-9" src="facebook.png"></a>
-                        <a href="#"><img class="h-9" src="instagram.png"></a></div>
-                    </div>
+        <div class="grid grid-cols-1 gap-1 md:grid-cols-6 text-center bg-white">
+            <div class="mt-1"><a href="index.html"><img src="logo.png" class="h-12 object-contain"></a></div>
+            <div class="hover:bg-gray-200 p-3 md:pt-4"><a href="about.html">關於我們</a></div>
+            <div class="hover:bg-gray-200 p-3 md:pt-4"><a href="#">常見問題</a></div>
+            <div class="hover:bg-gray-200 p-3 md:pt-4"><a href="member.html">會員專區</a></div>
+            <div class="hover:bg-gray-200 p-3 md:pt-4"><a href="#">會員登入</a></div>
+            <div class="hover:bg-gray-200 p-3 md:pt-4"><a href="#">中文</a></div>
+        </div>
+        <div class="bg-gray-100">
+            常見問題
+        </div>
+        <div class="flex flex-row h-28 bg-gray-200">
+            <div class="basis-1/4 flex justify-end items-end"><img class="h-20 bg-no-repeat object-contain" src="logo_blue.png"></div>
+            <div class="basis-2/4"></div>
+            <div class="basis-1/4">
+                <div class="mt-12 flex space-x-4 flex justify-start">
+                    <a href="#"><img class="h-9 object-contain" src="facebook.png"></a>
+                    <a href="#"><img class="h-9 object-contain" src="instagram.png"></a></div>
                 </div>
-            <div class="h-14 pt-4 bg-gray-200 text-center">
-                <div class="basis-full text-sm flex flex-row ml-96 space-x-7">
-                    <div class="flex"><img class="h-5 mr-2" src="phone.png">連絡電話&nbsp;01-2345-6789</div>
-                    <div class="flex"><img class="h-5 mr-2" src="email.png">電子郵件&nbsp;TSJ@gmail.com</div>
-                    <div class="flex"><img class="h-5 mr-2" src="clock.png">服務時間&nbsp;週一至週五 12:00 - 18:00 (國定假日除外)</div>
-                </div>
-           </div>
-            <div class="h-16 pt-5 bg-sky-400 text-center text-white">
-                <div class="basis-full">近小娛樂股份有限公司版權所有 © Near Entertainment Co.｜統一編號12345678</div>
             </div>
+        <div class="p-6 bg-gray-200 text-center">
+            <div class="grid grid-cols-1 gap-2 md:grid-cols-3 ">
+                <div class="flex"><img class="h-5 mr-2 mt-0.5" src="phone.png">連絡電話&nbsp;01-2345-6789</div>
+                <div class="flex"><img class="h-5 mr-2 mt-0.5" src="email.png">電子郵件&nbsp;TSJ@gmail.com</div>
+                <div class="flex"><img class="h-5 mr-2 mt-0.5" src="clock.png">服務時間&nbsp;週一至週五 12:00 - 18:00 (國定假日除外)</div>
+            </div>
+        </div>
+        <div class="p-5 bg-sky-400 text-center text-white">
+            <div class="basis-full">近小娛樂股份有限公司版權所有 © Near Entertainment Co.｜統一編號12345678</div>
         </div>
     </body>
 </html>
