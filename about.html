@@ -4,37 +4,44 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+        <link rel="icon" type="image/svg+xml" href="./src/icons/gura.png" />
     </head>
     <body class='bg-gray-100'>
-        <div class="grid grid-cols-1 gap-1 md:grid-cols-6 text-center bg-white">
-            <div class="mt-1"><a href="index.html"><img src="logo.png" class="h-12 object-contain"></a></div>
-            <div class="hover:bg-gray-200 p-3 md:pt-4"><a href="about.html">關於我們</a></div>
-            <div class="hover:bg-gray-200 p-3 md:pt-4"><a href="faq.html">常見問題</a></div>
-            <div class="hover:bg-gray-200 p-3 md:pt-4"><a href="member.html">會員專區</a></div>
-            <div class="hover:bg-gray-200 p-3 md:pt-4"><a href="#">會員登入</a></div>
-            <div class="hover:bg-gray-200 p-3 md:pt-4"><a href="#">中文</a></div>
+        <div class="grid grid-cols-1 gap-1 md:grid-cols-3 text-center bg-white shadow-md z-50 md:fixed start-0 end-0 top-0">
+            <a href="index.html"><div class="hover:bg-gray-200 p-3 md:pt-4">首頁</div></a>
+            <a href="about.html"><div class="hover:bg-gray-200 p-3 md:pt-4">關於網站</div></a>
+            <a href="info.html"><div class="hover:bg-gray-200 p-3 md:pt-4">個人資料</div></a>
         </div>
-        <div class="bg-gray-100">
-            關於我們
+        <div class="bg-white h-12 flex justify-center items-center text-2xl lg:text-3xl font-bold my-2 md:mt-14 shadow-md">關於網站</div>
+        <div class="bg-gray-100 px-3 py-3 xl:px-48 flex justify-center items-center">
+            <div class="bg-white lg:w-[66rem] rounded-xl shadow-lg text-base p-12 flex justify-center items-center">
+                <div class="max-w-[43rem] text-center hover:text-lg">
+                    因為太多演唱會門票沒搶到因此想模仿遠大售票系統的介面<br><br>
+                    順便藉著這個機會學著使用"<b>Tailwind CSS</b>"和"<b>JQuery</b>"<br><br>
+                    並試著加入了RWD，較能適應不同解析度的裝置。<br><br>
+                    希望哪天能夠順勢結合後端，打造一個真正的訂票網站。
+                </div>
+            </div>
         </div>
+        
         <div class="flex flex-row h-28 bg-gray-200">
-            <div class="basis-1/4 flex justify-end items-end"><img class="h-20 bg-no-repeat object-contain" src="logo_blue.png"></div>
+            <div class="basis-1/4"></div>
             <div class="basis-2/4"></div>
             <div class="basis-1/4">
-                <div class="mt-12 flex space-x-4 flex justify-start">
-                    <a href="#"><img class="h-9 object-contain" src="facebook.png"></a>
-                    <a href="#"><img class="h-9 object-contain" src="instagram.png"></a></div>
+                <div class="mt-12 flex space-x-4  justify-start">
+                    <a href="https://www.facebook.com/" target="_blank"><img class="h-9 object-contain" src="facebook.png"></a>
+                    <a href="https://www.instagram.com/"target="_blank"><img class="h-9 object-contain" src="instagram.png"></a></div>
                 </div>
             </div>
         <div class="p-6 bg-gray-200 text-center">
             <div class="grid grid-cols-1 gap-2 md:grid-cols-3 ">
-                <div class="flex"><img class="h-5 mr-2 mt-0.5" src="phone.png">連絡電話&nbsp;01-2345-6789</div>
-                <div class="flex"><img class="h-5 mr-2 mt-0.5" src="email.png">電子郵件&nbsp;TSJ@gmail.com</div>
-                <div class="flex"><img class="h-5 mr-2 mt-0.5" src="clock.png">服務時間&nbsp;週一至週五 12:00 - 18:00 (國定假日除外)</div>
+                <div class="flex justify-center"><img class="h-5 mr-2 mt-0.5" src="phone.png">連絡電話&nbsp;01-2345-6789</div>
+                <div class="flex justify-center"><img class="h-5 mr-2 mt-0.5" src="email.png">電子郵件&nbsp;11011218@gm.nttu.edu.tw</div>
+                <div class="flex justify-center"><img class="h-5 mr-2 mt-0.5" src="clock.png">服務時間&nbsp;週一至週五 12:00 - 18:00 (國定假日除外)</div>
             </div>
         </div>
-        <div class="p-5 bg-sky-400 text-center text-white">
-            <div class="basis-full">近小娛樂股份有限公司版權所有 © Near Entertainment Co.｜統一編號12345678</div>
+        <div class="p-5 bg-black text-center text-white">
+            <div class="basis-full">11011218</div>
         </div>
     </body>
 </html>
