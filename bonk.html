@@ -1,0 +1,100 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>打地鼠</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+  
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  
+</body>
+</html>
+ -->
+
+
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+        <style>
+          .hole {
+            width: 100px;
+            height: 100px;
+            background-color: #4a5568;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+          }
+          .mole {
+            width: 100px;
+            height: 100px;
+            background-color: #FF0000;
+            border-radius: 50%;
+            position: absolute;
+            top: 100%;
+            transition: top 0.3s;
+          }
+          .up {
+            top: 0%;
+          }
+        </style>
+    </head>
+    <body class='bg-gray-100'>
+        <div class="grid grid-cols-1 gap-1 md:grid-cols-4 text-center bg-white shadow-md z-50 md:fixed start-0 end-0 top-0">
+            <a href="index.html"><div class="hover:bg-gray-200 p-3 md:pt-4">首頁</div></a>
+            <a href="about.html"><div class="hover:bg-gray-200 p-3 md:pt-4">關於網站</div></a>
+            <a href="info.html"><div class="hover:bg-gray-200 p-3 md:pt-4">個人資料</div></a>
+            <a href="bonk.html"><div class="hover:bg-gray-200 p-3 md:pt-4">小遊戲</div></a>
+        </div>
+        <div class="flex items-center justify-center p-4">
+          <div class="text-center">
+            <h1 class="text-4xl font-bold mb-8">打地鼠</h1>
+            <div id="game" class="grid grid-cols-3 gap-4">
+              <div class="hole"><div class="mole"></div></div>
+              <div class="hole"><div class="mole"></div></div>
+              <div class="hole"><div class="mole"></div></div>
+              <div class="hole"><div class="mole"></div></div>
+              <div class="hole"><div class="mole"></div></div>
+              <div class="hole"><div class="mole"></div></div>
+              <div class="hole"><div class="mole"></div></div>
+              <div class="hole"><div class="mole"></div></div>
+              <div class="hole"><div class="mole"></div></div>
+            </div>
+            <div class="mt-8">
+              <button id="startBtn" class="px-6 py-3 bg-blue-500 text-white rounded-lg shadow-lg transition-transform transform hover:scale-110 focus:outline-none">
+                開始遊戲
+              </button>
+            </div>
+            <div class="mt-4 text-2xl">得分: <span id="score">0</span></div>
+            <div class="mt-4 text-2xl">剩餘時間: <span id="timeLeft">10</span></div>
+          </div>
+          <script src="bonk.js"></script>
+        </div>
+        
+        <div class="flex flex-row h-28 bg-gray-200">
+            <div class="basis-1/4"></div>
+            <div class="basis-2/4"></div>
+            <div class="basis-1/4">
+                <div class="mt-12 flex space-x-4  justify-start">
+                    <a href="https://www.facebook.com/" target="_blank"><img class="h-9 object-contain" src="facebook.png"></a>
+                    <a href="https://www.instagram.com/"target="_blank"><img class="h-9 object-contain" src="instagram.png"></a></div>
+                </div>
+            </div>
+        <div class="p-6 bg-gray-200 text-center">
+            <div class="grid grid-cols-1 gap-2 md:grid-cols-3 ">
+                <div class="flex justify-center"><img class="h-5 mr-2 mt-0.5" src="phone.png">連絡電話&nbsp;01-2345-6789</div>
+                <div class="flex justify-center"><img class="h-5 mr-2 mt-0.5" src="email.png">電子郵件&nbsp;11011218@gm.nttu.edu.tw</div>
+                <div class="flex justify-center"><img class="h-5 mr-2 mt-0.5" src="clock.png">服務時間&nbsp;週一至週五 12:00 - 18:00 (國定假日除外)</div>
+            </div>
+        </div>
+        <div class="p-5 bg-black text-center text-white">
+            <div class="basis-full">11011218</div>
+        </div>
+    </body>
+</html>
